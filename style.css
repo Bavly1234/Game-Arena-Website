@@ -1,0 +1,727 @@
+    ::selection {
+      background-color: #CAFD1C;
+      color: black;
+    }
+
+    body {
+      font-family: "Chakra Petch", sans-serif;
+      color: white;
+      overflow-x: hidden;
+
+    }
+
+    .days {
+      font-family: "Days One", sans-serif;
+
+    }
+
+    .chakra {
+      font-family: "Chakra Petch", sans-serif;
+
+    }
+
+
+    /* ************ Navbar ************ */
+    .nav-color {
+      background-color: #0B0E13;
+    }
+
+    .brand {
+      color: #CBFE1C;
+      font-family: "Days One", sans-serif;
+    }
+
+    .nav-color i {
+      color: #CBFE1C;
+
+    }
+
+    .i-of-nav i {
+
+      color: oklch(0.707 0.022 261.325);
+    }
+
+
+
+
+
+
+    /* ************ Hero Section ************ */
+    .hero {
+      background: url('images/hero-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+    }
+
+    .layer1 {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    .h1-hero {
+      font-family: "Days One", sans-serif;
+      font-size: 60px;
+      line-height: 75px;
+    }
+
+    .p-hero {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .start-gaming {
+      background-color: #CBFE1C;
+      font-weight: 600;
+    }
+
+    .start-gaming:hover {
+      background-color: #d9ff47;
+    }
+
+    .hero-img {
+      border: 5px solid transparent;
+      border-image: linear-gradient(45deg, #C2FC2C, #0FDF72);
+      border-image-slice: 1;
+      border-radius: 15px;
+    }
+
+    .image-box {
+      width: 500px;
+      height: 300px;
+      overflow: visible !important;
+    }
+
+    .image-box img {
+
+      object-fit: cover;
+    }
+
+    .active-players {
+      transform: translate(-40px, -60px);
+    }
+
+
+
+
+
+
+    /* ************** latest games sec ************************************/
+    .latest-games {
+      background-color: #0B0E13;
+    }
+
+    .latest-games .our-games1 {
+      color: #C6F81C;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .latest-games .our-games2 {
+      font-family: "Days One", sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    .latest-games .our-games1::before,
+    .latest-games .our-games1::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 70px;
+      height: 3px;
+      background: linear-gradient(to right, #0B0E13, #C6F81C);
+      transform: translateY(-50%);
+    }
+
+    .latest-games .our-games1::before {
+      left: -80px;
+    }
+
+    .latest-games .our-games1::after {
+      right: -80px;
+      background: linear-gradient(to left, #0B0E13, #C6F81C);
+    }
+
+    .carousel-item img {
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      width: 350px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .carousel-item img:hover {
+      transform: scale(1.05);
+    }
+
+
+
+
+
+
+
+    .carousel-bottom-arrows .carousel-controls-wrapper {
+      gap: 35px;
+    }
+
+    .carousel-bottom-arrows .carousel-control-prev,
+    .carousel-bottom-arrows .carousel-control-next {
+      position: static;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    .carousel-bottom-arrows .carousel-control-prev:hover,
+    .carousel-bottom-arrows .carousel-control-next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .carousel-bottom-arrows .view-all-btn {
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+
+
+    .game-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+      border: 3px solid transparent;
+      transition: border 0.3s ease;
+    }
+
+    .game-card img {
+      transition: transform 0.4s ease;
+    }
+
+    .game-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .game-card .overlay {
+      position: absolute;
+      background: linear-gradient(to top, rgba(255, 215, 0, 0.3), rgba(0, 0, 0, 0));
+      opacity: 0;
+      transition: opacity 0.4s ease, background 0.4s ease;
+      color: white;
+
+    }
+
+    .game-card:hover .overlay {
+      opacity: 1;
+      background: linear-gradient(to top, rgba(255, 215, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+
+    .game-card:hover {
+      border-color: #FFD700;
+    }
+
+
+
+    .tag-icon {
+      color: #CBFE1C;
+    }
+
+    .overlay .tag {
+      background-color: #28451B;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .overlay .game-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    /* ****************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ****************   what-we-do  *************** */
+
+
+
+
+    .Interactive {
+      color: #CBFE1C;
+    }
+
+
+
+
+
+
+    .custom-card {
+      border: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      background-color: #1A1A1A;
+      height: 300px;
+
+    }
+
+
+
+    .icon-wrapper {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      padding: 35px;
+      border-radius: 10%;
+      background-color: oklch(27.8% .033 256.848);
+
+      font-size: 28px;
+      transition: all 0.3s ease;
+    }
+
+    .icon-wrapper i {
+      color: #C2FC2C;
+    }
+
+
+    .custom-card h3 {
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      color: rgb(241, 241, 241);
+    }
+
+
+    .corner {
+      position: absolute;
+      width: 0;
+      height: 0;
+      transition: all 0.4s ease;
+    }
+
+    .corner-top-left {
+      top: -10px;
+      left: -10px;
+      border-top: 20px solid transparent;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      transform: rotate(130deg);
+
+    }
+
+    .corner-bottom-right {
+      bottom: -10px;
+      right: -10px;
+      border-top: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      transform: rotate(130deg);
+    }
+
+    .custom-card:hover {
+      border: #ffc107 2px solid;
+    }
+
+    .custom-card:hover .corner-top-left {
+      border-top-color: #ffc107;
+      top: 5px;
+      left: 5px;
+    }
+
+    .custom-card:hover .corner-bottom-right {
+      border-bottom-color: #ffc107;
+      bottom: 5px;
+      right: 5px;
+    }
+
+
+
+    .line::after {
+      content: "";
+      display: block;
+      width: 70%;
+      height: 4px;
+      margin: 40px auto 0;
+      border-radius: 10px;
+      background: linear-gradient(to right, #000, #ffcc00, #000);
+    }
+
+    .infinite-gallery {
+      position: relative;
+    }
+
+    .infinite-gallery::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      height: 250px;
+      background: radial-gradient(ellipse at center,
+          rgba(174, 217, 27, 0.3) 40%,
+          rgba(174, 217, 27, 0.0) 70%);
+      border-radius: 50% / 50%;
+      z-index: 0;
+    }
+
+    .scroll-content {
+      gap: 20px;
+      animation: scroll-left 15s linear infinite;
+    }
+
+    .row-bottom .scroll-content {
+      animation: scroll-right 15s linear infinite;
+    }
+
+    .scroll-content img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes scroll-right {
+      0% {
+        transform: translateX(-50%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+
+    /* *******************************our team ************************* */
+
+    .Meet-the-professional {
+      font-size: 20px;
+      line-height: 28px;
+      color: oklch(0.707 0.022 261.325);
+    }
+
+
+    .layer {
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: all 0.8s;
+    }
+
+    .Name-card {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+
+    }
+
+    .Pro-Player {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+
+    }
+
+    .World-Champion {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: oklch(0.707 0.022 261.325);
+      margin: 0;
+
+    }
+
+    .card-left {
+      padding-left: 5px;
+    }
+
+
+
+    .PHANTOM {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      transform: rotate(90deg);
+      margin-top: 40px
+    }
+
+    .card-team {
+      border-radius: 22px;
+      overflow: hidden;
+      background-color: transparent;
+
+    }
+
+    .card-team:hover .layer {
+      transform: translateY(-100%);
+    }
+
+    .card-team:hover .PHANTOM {
+      color: #CBFE1C;
+    }
+
+    .card-team:hover .Pro-Player {
+      color: #CBFE1C;
+    }
+
+    .info-box {
+      transform: translateY(-20%);
+      padding: 0 10px;
+    }
+
+
+
+
+
+    /* **************** contact us********************** */
+
+    .CONTACT {
+      background-color: #0F1521;
+    }
+
+    .CONTACT .our-games1 {
+      color: #C6F81C;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .CONTACT .our-games2 {
+      font-family: "Days One", sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    .CONTACT .our-games1::before,
+    .CONTACT .our-games1::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 70px;
+      height: 3px;
+      background: linear-gradient(to right, #0B0E13, #C6F81C);
+      transform: translateY(-50%);
+    }
+
+    .CONTACT .our-games1::before {
+      left: -80px;
+    }
+
+    .CONTACT .our-games1::after {
+      right: -80px;
+      background: linear-gradient(to left, #0B0E13, #C6F81C);
+    }
+
+    .location {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      color: rgb(241, 241, 241);
+      margin: 0;
+    }
+
+    .street {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: oklch(0.707 0.022 261.325);
+      margin: 0;
+
+    }
+
+    .contact-icon {
+      background-color: #CBFE1C;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      font-size: 24px;
+    }
+
+    .contact-icon-text {
+      background-color: #1E2939;
+      border-radius: 18px;
+      padding: 32px;
+    }
+
+    .community {
+      background: linear-gradient(90deg, #C7FE25, #29E170);
+      border-radius: 18px;
+
+    }
+
+    .Join-Our-Community {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: rgb(11, 14, 19);
+    }
+
+    .Connect-with-us {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgb(11, 14, 19);
+
+    }
+
+    .icon-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: black;
+      transition: 0.5s;
+    }
+
+    .icon-icon i {
+      color: #C7FD24;
+      font-size: 26px;
+    }
+
+    .icon-icon:hover {
+      background-color: #2E3D19;
+    }
+
+    .my-form {
+      background-color: #1E2939;
+      border-radius: 18px;
+
+    }
+
+    .my-form .form-control {
+      background-color: #364153;
+      border: 1px solid #ffffff;
+      color: oklch(0.872 0.01 258.338);
+      margin-block: 10px;
+
+    }
+
+    .my-form label {
+      color: oklch(0.872 0.01 258.338);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .my-form .form-control::placeholder {
+      color: rgb(241 241 241);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .CONTACT .our-games1 {
+      width: fit-content;
+    }
+
+    .Send-Message {
+      background-color: #CBFE1C;
+      transition: 0.5s;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      margin-block: 10px;
+
+    }
+
+    .Send-Message:hover {
+      background-color: #A8D321;
+      color: black;
+    }
+
+    .my-form input:focus,
+    .my-form textarea:focus,
+    .my-form select:focus {
+      outline: none;
+      box-shadow: none;
+      border: 2px solid;
+      border-color: #CBFE1C;
+    }
+
+
+    /* **************footer ***************** */
+    .i-of-footer {
+      color: #CBFE1C;
+
+    }
+
+    .font-weight400-font-size16-line-height24-color-oklch {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: oklch(0.707 0.022 261.325);
+    }
+
+
+    .last-h3 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      color: rgb(241, 241, 241);
+    }
+
+    .last-ul a {
+
+      transition: 0.5s;
+    }
+
+    .last-ul a:hover {
+      color: #CBFE1C;
+    }
+
+    footer .container::after {
+      content: "";
+      width: 100%;
+      height: 3px;
+
+    }
+
+    footer .end-footer {
+
+      border-top: 2px solid white;
+      margin-top: 15px;
+    }
+
+    .policies a {
+      transition: 0.5s;
+    }
+
+    .policies a:hover {
+      color: #C2FC2C;
+    }
